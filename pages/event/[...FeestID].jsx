@@ -1,14 +1,16 @@
 import { knex } from "../../components/Helper";
 import Image from "next/image";
 import Link from "next/link";
+import classes from "../Events.module.css";
 
 const EventDetail = ({
-  event: { Affiche, Ticketing_url, Prijs, Naam, Width, Height, Alt }, timetable
+  event: { Affiche, Ticketing_url, Prijs, Naam, Width, Height, Alt },
+  timetable,
 }) => {
   return (
     <>
-      <header className="artistheader">
-        <div className="content">
+      <header className={classes.eventheader}>
+        <div className={classes.content}>
           <h1>{Naam}</h1>
         </div>
       </header>
@@ -23,17 +25,21 @@ const EventDetail = ({
             objectFit="contain"
           />
         </div>
-        <div className="timetable" key={timetable.id}>
-          From: {timetable.From}
-          Till: {timetable.Till}
-        </div>
-        <div className="event-detail">
+        <div className={classes.eventdetail}>
           <h1>{Naam}</h1>
           <div className="timetable"></div>
           <h1>Price: {Prijs}</h1>
           <Link href={Ticketing_url}>
             <a className="btn btn-outline-light">Tickets</a>
           </Link>
+        </div>
+        <div className={classes.timetable} key={timetable.id}>
+          <h1>Timetable</h1>
+          <div className='time'>
+          <p>Artist:</p>
+          <p>From: {timetable.From}</p>
+          <p>Till: {timetable.Till}</p>
+          </div>
         </div>
       </section>
     </>
@@ -53,7 +59,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       event,
-      timetable
+      timetable,
     },
   };
 }

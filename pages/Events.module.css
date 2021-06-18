@@ -31,6 +31,10 @@
   max-height: 200px;
 }
 
+.eventdetail h1{
+  margin-bottom:  20px;
+}
+
 .picker {
   height: 50vh;
   background-color: #000;
@@ -66,4 +70,16 @@
 
 .btn .btn-outline {
   margin-left: 50px
+}
+
+
+.timetable {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
 }
