@@ -1,14 +1,13 @@
 export const knex = require("knex")({
   client: "mysql2",
   connection: {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
+    host: "89.36.74.243",
+    user: "kelderdeuntjes",
+    password: "QoU23@endqoel7fS",
+    database: "kelderdeuntjes",
     // host: "localhost",
     // user: "root",
     // password: "rootpass",
     // database: "kelderdeuntjes",
   },
 });
-
