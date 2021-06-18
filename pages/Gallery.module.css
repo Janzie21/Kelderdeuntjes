@@ -1,0 +1,61 @@
+/* GALLERY */
+
+.galleryheader {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background: url(../public/afbeeldingen/bg-6.jpg);
+  background-size: cover;
+}
+
+.galleryheader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.galleryheader .content h1,
+.galleryheader .content img {
+  font-family: "Nosifer", cursive;
+  margin-bottom: 40px;
+  font-size: 80px;
+}
+
+.galleryheader .content img {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.info {
+  width: 30vw;
+  height: 50vh;
+  max-height: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.selector {
+  margin: 20px;
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .galleryheader .content h1,
+  .galleryheader .content img {
+    font-family: "Nosifer", cursive;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+}

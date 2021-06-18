@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Staatliches", sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+#booking {
+  background: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 20px;
+}
+
+.callback-form ::placeholder {
+  color: #f5f5f5;
+}
+
+/* Text colors */
+
+.text-primary {
+  color: #000;
+}
+
+/* BACKGROUND */
+
+.bg-primary {
+  color: #000;
+  background-color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+  color: #000;
+}
+.bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  text-align: center;
+  height: 50px;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #000;
+}
+
+.btn-outline-light {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* FLEX ITEMS */
+
+.flex-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items div {
+  padding: 20px;
+}
+
+/* FLEX COLUMNS */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column-1,
+.flex-columns .column-2 {
+  height: 100%;
+  text-align: center;
+}
+
+.flex-columns .column-1 {
+  margin: 50px;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: no-repeat center center/cover;
+  padding-bottom: 70px;
+}
+
+.flex-columns img#test {
+  width: 100%;
+  height: 100%;
+  object-fit: no-repeat center center/cover;
+  padding-bottom: 70px;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.flex-columns h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.flex-columns h4 {
+  margin-bottom: 30px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Section header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* FLEX GRID */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+img {
+  width: 100%;
+  height: 70vh;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.newsletter h2 {
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.newsletter p {
+  width: 30vw;
+}
+
+.newsletter input {
+  width: 30vw;
+  background: #000;
+  border-color: #000;
+  border-bottom: #fff 1px solid;
+  padding: 10px;
+  color: #fff;
+  margin: 20px;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* HOME */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.contact-details i {
+  color: #fff;
+  padding-right: 20px;
+}
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  background: #000;
+  border-color: #000;
+  border-bottom: #fff 1px solid;
+  padding: 20px;
+  color: #fff;
+  margin: 20px;
+}
+
+.callback-form input#submit {
+  border-color: #fff;
+  padding: 5px 0;
+  color: #fff;
+  background: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.callback-form input#submit:hover {
+  border-color: #fff;
+  padding: 5px 0;
+  color: #000;
+  background: #fff;
+  font-size: 20px;
+}
+
+.contact h2 {
+  font-weight: bold;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #141518;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s ease-in;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+.booking-header .navbar a:hover {
+  border-bottom: #3eff15 2px solid;
+}
+
+.artists-header .navbar a:hover {
+  border-bottom: #ff0099 2px solid;
+}
+
+.events-header .navbar a:hover {
+  border-bottom: #ff0000 2px solid;
+}
+
+.gallery-header .navbar a:hover {
+  border-bottom: #fff000 2px solid;
+}
+
+.podcasts-header .navbar a:hover {
+  border-bottom: #7122fa 2px solid;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar.top.active {
+  background-color: #333;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  border-bottom: #fff 2px solid;
+}
+
+.navbar ul li:last-child {
+  border: #fff 1px solid;
+  padding: 3px;
+}
+
+.navbar ul li:last-child a:hover {
+  border-bottom: none;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 90px;
+}
+
+/* HEADER */
+
+.mainheader {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  animation: animate ease-in-out 30s infinite;
+  background-size: cover;
+  background: url(../public/afbeeldingen/bg-1.jpg) no-repeat center center fixed,
+    url(../public/afbeeldingen/bg-2.jpg), url(../public/afbeeldingen/bg-3.jpg);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(../public/afbeeldingen/bg-3.jpg)
+      url(../public/afbeeldingen/bg-1.jpg);
+  }
+  33% {
+    background-image: url(../public/afbeeldingen/bg-1.jpg),
+      url(../public/afbeeldingen/bg-2.jpg);
+  }
+  66% {
+    background-image: url(../public/afbeeldingen/bg-2.jpg),
+      url(../public/afbeeldingen/bg-3.jpg);
+  }
+}
+
+.mainheader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.mainheader .content h1,
+.mainheader .content img {
+  font-family: "Nosifer", cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.mainheader .content img {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+/* Carousel */
+
+.slider {
+  margin-top: 100px;
+}
+
+.slider div {
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 150px;
+  border-top: 1px #fff solid;
+}
+
+.footer a {
+  color: #fff;
+}
+.spotify:hover {
+  color: #1db954;
+}
+
+.insta:hover {
+  color: #8a3ab9;
+}
+
+.soundcloud:hover {
+  color: #fe5000;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.email:hover {
+  color: #bb001b;
+}
+
+/* ARTISTS */
+
+.artistheader {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background: url("../public/afbeeldingen/bg-4.jpg");
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.artistheader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.artistheader .content h1,
+.artistheader .content img {
+  font-family: "Nosifer", cursive;
+  font-size: 80px;
+}
+
+.artistheader .content img {
+  width: auto;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.artistdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 30vw;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 60vh;
+  overflow: hidden;
+  object-fit: contain;
+  margin: 0 50px 50px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+  height: 50vh;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.social a {
+  margin-right: 20px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+
+
+
+  .hero .content h1 {
+    font-size: 25px;
+    font-family: leander-script-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .navbar a {
+    padding: 10px 5px;
+    margin: 0 3px;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .content .logo {
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    max-width: 120px;
+    max-height: 50px;
+  }
+
+
+  .section-header {
+    align-items: center;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .column h2 {
+    font-size: 30px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-columns .column-2 h3,
+  h4 {
+    font-size: 20px;
+  }
+
+}

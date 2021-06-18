@@ -1,0 +1,69 @@
+/* EVENTS */
+
+.eventheader {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background: url(../public/afbeeldingen/bg-5.jpg);
+  background-size: cover;
+}
+
+.eventheader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.eventheader .content h1,
+.eventheader .content img {
+  font-family: "Nosifer", cursive;
+  margin-bottom: 40px;
+  font-size: 80px;
+}
+
+.eventheader .content img {
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+.picker {
+  height: 50vh;
+  background-color: #000;
+  color: #fff;
+  margin: 20px;
+}
+
+.eventsection {
+  margin-top: 50px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.topbuttons {
+  border-bottom: 2px #000 solid;
+  margin: 0 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 50vh;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.btn .btn-outline {
+  margin-left: 50px
+}

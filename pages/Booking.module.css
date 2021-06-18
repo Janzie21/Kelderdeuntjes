@@ -1,0 +1,89 @@
+/* BOOKING */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+
+.display a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.contact-details i {
+  color: #fff;
+  padding-right: 20px;
+}
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  background: #000;
+  border-color: #000;
+  border-bottom: #fff 1px solid;
+  padding: 20px;
+  color: #fff;
+  margin: 20px;
+}
+
+.callback-form input#submit {
+  border-color: #fff;
+  padding: 5px 0;
+  color: #fff;
+  background: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.callback-form input#submit:hover {
+  border-color: #fff;
+  padding: 5px 0;
+  color: #000;
+  background: #fff;
+  font-size: 20px;
+}
+
+.contact h2 {
+  font-weight: bold;
+}
+
+/* Video styling */
+/*
+.video-player {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+} */
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 1;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
