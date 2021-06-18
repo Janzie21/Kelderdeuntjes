@@ -1,6 +1,7 @@
 import classes from "./Podcasts.module.css";
 import Image from "next/image";
 import { knex } from "../components/Helper";
+import ReactPlayer from "react-player";
 
 const Podcasts = ({ podcasts }) => {
   return (
@@ -13,24 +14,9 @@ const Podcasts = ({ podcasts }) => {
       <div className={classes.podcastsection}>
         {podcasts.map(({ id, Stream_title, Path, Img, Width, Heigth, Alt }) => (
           <div key={id} className={classes.podcast}>
-            <div>
-              <Image
-                src={`/afbeeldingen/${Img}`}
-                priority={true}
-                width={Width}
-                height={Heigth}
-                alt={Alt}
-                objectFit="responsive"
-              />
-            </div>
             <div className={classes.podcastinfo}>
               <h1>{Stream_title}</h1>
-
-              {/*    <ReactAudioPlayer
-                className={classes.player}
-                src={Path}
-                controls
-              /> */}
+              <ReactPlayer url={Path} height={200} />
             </div>
           </div>
         ))}
