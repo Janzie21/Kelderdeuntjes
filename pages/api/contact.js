@@ -12,7 +12,7 @@ export default function (req, res) {
     // },
     auth: {
       user: "noreply@kelderdeuntjes.be",
-      pass: "yg!ajh5d4Rns0pOH",
+      pass: process.env.password,
     },
   });
   const mailData = {

@@ -25,7 +25,7 @@ const ArtistDetail = ({
         </div>
         <div className="artist-detail">
           <div dangerouslySetInnerHTML={omschrijving}></div>
-          <Test />
+          {/* <Test /> */}
         </div>
       </section>
     </>
