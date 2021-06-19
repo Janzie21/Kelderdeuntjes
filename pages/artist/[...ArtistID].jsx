@@ -1,6 +1,5 @@
 import { knex } from "../../components/Helper";
 import Image from "next/image";
-import Test from "../../components/Social";
 
 const ArtistDetail = ({
   artist: { Profielfoto, Omschrijving, Naam, Width, Height, Alt, ArtistID },
@@ -34,7 +33,9 @@ const ArtistDetail = ({
                   {artiest.links
                     .filter((link) => artiest.ArtistID === ArtistID)
                     .map((link) => (
-                      <p>{link.url}</p>
+                      <div>
+                        <a href={link.url}>{link.url}</a>
+                      </div>
                     ))}
                 </li>
               </ul>
