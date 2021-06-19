@@ -356,26 +356,6 @@ img {
   z-index: 100;
 }
 
-.booking-header .navbar a:hover {
-  border-bottom: #3eff15 2px solid;
-}
-
-.artists-header .navbar a:hover {
-  border-bottom: #ff0099 2px solid;
-}
-
-.events-header .navbar a:hover {
-  border-bottom: #ff0000 2px solid;
-}
-
-.gallery-header .navbar a:hover {
-  border-bottom: #fff000 2px solid;
-}
-
-.podcasts-header .navbar a:hover {
-  border-bottom: #7122fa 2px solid;
-}
-
 .navbar.top {
   background: transparent;
 }
@@ -614,8 +594,6 @@ img {
     display: none;
   }
 
-
-
   .hero .content h1 {
     font-size: 25px;
     font-family: leander-script-pro, sans-serif;
@@ -638,7 +616,6 @@ img {
     max-width: 120px;
     max-height: 50px;
   }
-
 
   .section-header {
     align-items: center;
@@ -671,5 +648,4 @@ img {
   h4 {
     font-size: 20px;
   }
-
 }

@@ -4,11 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Social from "../components/Social";
 import Bookingform from "./Bookingform";
-import {
-  faFacebookF,
-  faSoundcloud,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Booking = () => {
   return (
