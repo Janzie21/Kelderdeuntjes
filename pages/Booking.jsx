@@ -2,12 +2,17 @@ import classes from "./Booking.module.css";
 import ReactPlayer from "react-player/youtube";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import Social from "./Social";
+import Social from "../components/Social";
 import Bookingform from "./Bookingform";
+import {
+  faFacebookF,
+  faSoundcloud,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Booking = () => {
   return (
-    <body id='booking'>
+    <body id="booking">
       <header className="booking-header"></header>
       <div className={classes.overlayText}>
         <h2 id="topText">Hire Us</h2>
@@ -45,7 +50,7 @@ const Booking = () => {
                     <FontAwesomeIcon icon={faEnvelope} />
                     kelderdeuntjes@gmail.com
                   </p>
-                  {/* <Social /> */}
+                  <Social />
                 </div>
               </div>
             </div>
