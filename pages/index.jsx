@@ -48,37 +48,36 @@ const Home = ({ future }) => {
               <div className="column-2 bg-primary">
                 <h2>Who are we</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                  pariatur error ad cupiditate rerum labore iste excepturi illo
-                  molestiae itaque laborum optio, aut sed illum. Aliquam minus
-                  quae officiis perferendis? Sint illo aliquid asperiores autem
-                  expedita vitae voluptates reiciendis nostrum, nisi possimus
-                  ipsum impedit ullam porro. Odit, autem itaque consectetur,
-                  eligendi excepturi nobis, sunt repudiandae iste necessitatibus
-                  nostrum fuga nisi. Molestias, ma gni? Aspernatur incidunt
-                  velit odit rerum quo blanditiis inventore voluptatibus,
-                  commodi enim ad sit assumenda debitis quaerat nemo iusto
-                  mollitia minima dolorum excepturi, unde explicabo.
-                  Voluptatibus libero iure tenetur! At quasi ipsa, voluptates
-                  reiciendis voluptas qui vitae suscipit eos error? Animi,
-                  architecto? Numquam recusandae rem obcaecati. Quibusdam quos
-                  porro obcaecati ut voluptate consequuntur modi libero enim,
-                  dignissimos maxime aspernatur. Nam voluptatum doloribus
-                  nesciunt explicabo voluptatibus nemo ipsum deserunt
-                  consectetur voluptatem rerum. Explicabo porro maxime officia,
-                  laboriosam id perferendis molestias quasi provident, dolores
-                  sed doloribus corrupti labore qui, animi in. Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Ex voluptates
-                  accusamus dolorem! Nihil dolores qui amet, reprehenderit
-                  perspiciatis porro, neque eos quasi ducimus id similique
-                  distinctio veniam eum asperiores? Non? Fugit at quibusdam
-                  dignissimos eos officia ea ut nihil voluptates voluptas
-                  quaerat ratione quam delectus quae consequuntur illo, quas
-                  odio vel corporis explicabo molestias quia vitae tempore modi
-                  sequi. Asperiores! Nesciunt, ab incidunt. Esse nisi quisquam
-                  corporis iusto neque. Eum obcaecati, sapiente nihil blanditiis
-                  repellendus saepe possimus vel, cumque hic enim sit fugit
-                  doloribus corrupti veniam quisquam laborum culpa pariatur!
+                  Kelderdeuntjes is a techno minimal concept that has been
+                  rocking the dance floor since 2016. The first baby steps were
+                  taken in the backstage room of the legendary club "La Rocca"!
+                  <br />
+                  <br />
+                  It soon became clear that this concept was something special
+                  and we moved to the ballroom of la rocca. Where legendary
+                  evenings are etched in the memories of many techno lovers.
+                  Such as evenings with Joyhauser, Amelie lens, Dense & pika,
+                  Joran van pol and many more...
+                  <br />
+                  <br />
+                  It became clear that we had to spread our wings and make our
+                  mark in the Belgian techno scene starting in Antwerp. We had
+                  events in: De Spiegeltent , club vague de and beautiful
+                  collabs in zodiac with Antwerp techno & untz untz and one in
+                  the shop with B-rave!
+                  <br />
+                  <br />
+                  Besides all that party violence, we also try to be a platform
+                  for upcoming DJ/producer within our capabilities.
+                  <br />
+                  <br />
+                  Since the far-reaching measures, we have started a 2-weekly
+                  podcast on soundcloud where national and international DJs
+                  fire a podcast of +/- one hour at us!
+                  <br />
+                  <br />
+                  We hope to see you back on our dance floor soon And don’t
+                  forget ravers…. KEEP ON RAVING!!
                 </p>
                 <Link href="/Booking">
                   <a className="btn btn-outline">Hire us</a>
