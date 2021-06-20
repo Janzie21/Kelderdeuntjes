@@ -36,9 +36,9 @@ const Home = ({ future }) => {
                 <Image
                   id="test"
                   src="/afbeeldingen/kelderdeuntjes2.jpg"
-                  alt=""
-                  width="5184"
-                  height="3456"
+                  alt="beginpagina"
+                  width="1200"
+                  height="800"
                   objectFit="fill"
                 />
               </div>
