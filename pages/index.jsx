@@ -39,7 +39,6 @@ const Home = ({ future }) => {
                   alt=""
                   width="5184"
                   height="3456"
-                  layout="responsive"
                   objectFit="fill"
                 />
               </div>
