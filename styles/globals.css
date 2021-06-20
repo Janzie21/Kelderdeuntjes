@@ -146,6 +146,10 @@ img {
   text-align: center;
 }
 
+.column-2 .intro {
+  text-align: left;
+}
+
 .flex-columns .column-1 {
   margin: 50px;
 }

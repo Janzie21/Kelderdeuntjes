@@ -77,7 +77,10 @@ const Home = ({ future }) => {
                   <br />
                   <br />
                   We hope to see you back on our dance floor soon And don’t
-                  forget ravers…. KEEP ON RAVING!!
+                  forget ravers….
+                  <br />
+                  <br />
+                  KEEP ON RAVING!!
                 </p>
                 <Link href="/Booking">
                   <a className="btn btn-outline">Hire us</a>
