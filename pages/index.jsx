@@ -4,6 +4,8 @@ import Link from "next/link";
 import SimpleSlider from "../components/SimpleSlider";
 import { knex } from "../components/Helper";
 import { useState } from "react";
+import slugify from "slugify";
+import moment from "moment";
 
 const Home = ({ future }) => {
   const [fn, setFn] = useState("");
@@ -105,15 +107,17 @@ const Home = ({ future }) => {
               <div className="column-2 bg-primary">
                 <h2>Upcoming event</h2>
                 <h3>{future.Naam}</h3>
-                <h3>{future.Datum}</h3>
+                <h3>{moment(future.Datum).format("DD/MM/YYYY")}</h3>
                 <h4>{future.Locatie}</h4>
                 <a
-                  href="https://www.google.be/maps/place/Outfort/@51.1673043,4.3472781,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f3e41db6e0fd:0xefaa0eadd04e8160!8m2!3d51.1673043!4d4.3494668"
-                  target="_blank"
-                  className="btn btn-outline"
+                  className="btn btn-outline-light"
+                  href={`/event/${future.FeestID}/${slugify(future.Naam, {
+                    strict: true,
+                    lower: true,
+                  })}`}
                 >
                   <i className="fas fa-chevron"></i>
-                  Directions
+                  Info
                 </a>
               </div>
             </div>

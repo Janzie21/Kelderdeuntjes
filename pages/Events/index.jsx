@@ -3,7 +3,8 @@ import { useState } from "react";
 import slugify from "slugify";
 import Image from "next/image";
 import Link from "next/link";
-import { knex } from '../../components/Helper';
+import { knex } from "../../components/Helper";
+import moment from "moment";
 
 const Events = ({ passed, future }) => {
   const [events, setEvents] = useState(true);
@@ -55,7 +56,7 @@ const Events = ({ passed, future }) => {
                     />
 
                     <h1>{Naam}</h1>
-                    <h4>{Locatie}</h4>
+                    <h3>{Locatie}</h3>
 
                     <Link href="/Gallery/">
                       <a className="btn btn-outline-light">Pics</a>
@@ -64,7 +65,16 @@ const Events = ({ passed, future }) => {
                 )
               )
             : future.map(
-                ({ Naam, Locatie, Affiche, FeestID, Width, Height, Alt }) => (
+                ({
+                  Naam,
+                  Locatie,
+                  Affiche,
+                  FeestID,
+                  Width,
+                  Height,
+                  Alt,
+                  Datum,
+                }) => (
                   <div key={FeestID} className={classes.info}>
                     <Image
                       src={`/afbeeldingen/${Affiche}`}
@@ -75,7 +85,8 @@ const Events = ({ passed, future }) => {
                     />
 
                     <h1>{Naam}</h1>
-                    <h4>{Locatie}</h4>
+                    <h3>{Locatie}</h3>
+                    <h3>{moment(future.Datum).format("DD/MM/YYYY")}</h3>
 
                     <Link
                       href={`/event/${FeestID}/${slugify(Naam, {

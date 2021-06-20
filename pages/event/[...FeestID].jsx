@@ -2,9 +2,10 @@ import { knex } from "../../components/Helper";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "../Events.module.css";
+import moment from "moment";
 
 const EventDetail = ({
-  event: { Affiche, Ticketing_url, Prijs, Naam, Width, Height, Alt },
+  event: { Affiche, Ticketing_url, Prijs, Naam, Width, Height, Alt, Datum },
   timetable,
 }) => {
   return (
@@ -27,7 +28,7 @@ const EventDetail = ({
         </div>
         <div className={classes.eventdetail}>
           <h1>{Naam}</h1>
-          <div className="timetable"></div>
+          <h1>{moment(Datum).format("DD/MM/YYYY")}</h1>
           <h1>Price: {Prijs}</h1>
           <Link href={Ticketing_url}>
             <a className="btn btn-outline-light">Tickets</a>

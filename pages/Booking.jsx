@@ -39,11 +39,11 @@ const Booking = () => {
                   <h2>Contact details</h2>
                   <p>
                     <FontAwesomeIcon icon={faPhone} />
-                    +31(0)494676492
+                    +32(0)494676492
                   </p>
                   <p>
                     <FontAwesomeIcon icon={faEnvelope} />
-                    kelderdeuntjes@gmail.com
+                    michael@kelderdeuntjes.be
                   </p>
                   <Social />
                 </div>
