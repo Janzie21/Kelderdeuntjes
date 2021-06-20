@@ -40,7 +40,7 @@ const Home = ({ future }) => {
                   width="5184"
                   height="3456"
                   layout="responsive"
-                  objectFit="scale-down"
+                  objectFit="fill"
                 />
               </div>
             </div>
