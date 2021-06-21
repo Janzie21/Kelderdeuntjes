@@ -13,6 +13,8 @@ body {
   line-height: 1.6;
 }
 
+
+
 #booking {
   background: #000;
 }
@@ -411,9 +413,9 @@ img {
   color: #fff;
   animation: animate ease-in-out 30s infinite;
   background-size: cover;
+  overflow: hidden;
   background: url(../public/afbeeldingen/bg-1.jpg) no-repeat center center fixed,
     url(../public/afbeeldingen/bg-2.jpg), url(../public/afbeeldingen/bg-3.jpg);
-  overflow: hidden;
 }
 
 @keyframes animate {
@@ -446,6 +448,10 @@ img {
   font-family: "Nosifer", cursive;
   font-size: 60px;
   margin-bottom: 20px;
+}
+
+.mainheader .content h1 {
+  overflow: hidden;
 }
 
 .mainheader .content img {
@@ -599,6 +605,11 @@ img {
     height: 120px;
     padding: 20px;
   }
+
+  #navbar {
+    overflow: hidden;
+  }
+
   .navbar a {
     padding: 10px 5px;
     margin: 0 3px;
@@ -611,9 +622,13 @@ img {
     display: none;
   }
 
-  .mainheader .content h1,
+  /* .mainheader .content h1,
   .artistheader .content img {
     font-size: 40px;
+  } */
+
+  .mainheader .content h1 {
+    font-size: 20px;
   }
 
   .flex-items {
