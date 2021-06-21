@@ -55,7 +55,7 @@ export async function getServerSideProps(context) {
   const res = await knex.raw(sql);
   const [id] = context.query.ArtistID;
   console.log(id);
-  const resp = await knex("Artists").where("ArtistID", parseInt(id)).first();
+  const resp = await knex("artists").where("ArtistID", parseInt(id)).first();
   const artist = JSON.parse(JSON.stringify(resp));
   console.log(artist);
   return {

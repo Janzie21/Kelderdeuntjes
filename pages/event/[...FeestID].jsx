@@ -36,10 +36,10 @@ const EventDetail = ({
         </div>
         <div className={classes.timetable} key={timetable.id}>
           <h1>Timetable</h1>
-          <div className='time'>
-          <p>Artist:</p>
-          <p>From: {timetable.From}</p>
-          <p>Till: {timetable.Till}</p>
+          <div className="time">
+            <p>Artist:</p>
+            <p>From: {timetable.From}</p>
+            <p>Till: {timetable.Till}</p>
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default EventDetail;
 export async function getServerSideProps(context) {
   const [id] = context.query.FeestID;
   console.log(id);
-  const resp = await knex("Feestjes").where("FeestID", parseInt(id)).first();
+  const resp = await knex("feestjes").where("FeestID", parseInt(id)).first();
   const res = await knex("timetable");
   const event = JSON.parse(JSON.stringify(resp));
   const timetable = JSON.parse(JSON.stringify(res));

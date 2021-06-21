@@ -1,4 +1,7 @@
 /* BOOKING */
+.bookingheader {
+  overflow: hidden;
+}
 
 .contact-details {
   display: flex;

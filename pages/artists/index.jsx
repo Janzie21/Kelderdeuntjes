@@ -47,7 +47,7 @@ export default Artists;
 
 export async function getServerSideProps() {
   //2. Query uitvoeren //
-  const data = await knex("Artists")
+  const data = await knex("artists")
     .where("Rol", "=", "Resident")
     .orWhere("Rol", "=", "Founder");
   const artists = JSON.parse(JSON.stringify(data));

@@ -611,8 +611,9 @@ img {
     display: none;
   }
 
-  .mainheader .content h1 {
-    font-size: 50px;
+  .mainheader .content h1,
+  .artistheader .content img {
+    font-size: 40px;
   }
 
   .flex-items {
@@ -624,7 +625,6 @@ img {
     flex: 100%;
     max-width: 100%;
   }
-
 
   /* Artists */
 

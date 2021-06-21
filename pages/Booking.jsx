@@ -8,7 +8,7 @@ import Bookingform from "./Bookingform";
 const Booking = () => {
   return (
     <body id="booking">
-      <header className="booking-header"></header>
+      <header className={classes.bookingheader}></header>
       <div className={classes.overlayText}>
         <h2 id="topText">Hire Us</h2>
       </div>
