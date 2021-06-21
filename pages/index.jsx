@@ -45,6 +45,7 @@ const Home = ({ future }) => {
             </div>
             <div className="column">
               <div className="column-2 bg-primary">
+                <div className="align-left">
                 <h2>Who are we</h2>
                 <p>
                   Kelderdeuntjes is a techno minimal concept that has been
@@ -84,6 +85,7 @@ const Home = ({ future }) => {
                 <Link href="/Booking">
                   <a className="btn btn-outline">Hire us</a>
                 </Link>
+              </div>
               </div>
             </div>
           </div>

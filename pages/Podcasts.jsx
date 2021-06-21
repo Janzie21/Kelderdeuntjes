@@ -1,5 +1,4 @@
 import classes from "./Podcasts.module.css";
-import Image from "next/image";
 import { knex } from "../components/Helper";
 import ReactPlayer from "react-player";
 

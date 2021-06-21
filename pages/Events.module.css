@@ -4,8 +4,8 @@
   height: 100vh;
   position: relative;
   color: #fff;
-  background: url(../public/afbeeldingen/bg-5.jpg);
-  background-size: cover;
+  background: url(../public/afbeeldingen/bg-5.jpg) no-repeat center center/cover;
+  overflow: hidden;
 }
 
 .eventheader .content {
@@ -31,8 +31,8 @@
   max-height: 200px;
 }
 
-.eventdetail h1{
-  margin-bottom:  20px;
+.eventdetail h1 {
+  margin-bottom: 20px;
 }
 
 .picker {
@@ -69,9 +69,8 @@
 }
 
 .btn .btn-outline {
-  margin-left: 50px
+  margin-left: 50px;
 }
-
 
 .timetable {
   display: flex;
@@ -84,3 +83,13 @@
   flex-direction: row;
 }
 
+@media (max-width: 768px) {
+  .eventheader .content h1,
+  .eventheader .content img {
+    font-family: "Nosifer", cursive;
+    margin-bottom: 40px;
+    font-size: 50px;
+  }
+
+
+}

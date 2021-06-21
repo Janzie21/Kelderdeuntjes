@@ -154,6 +154,10 @@ img {
   margin: 50px;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .flex-columns img {
   width: 100%;
   height: 100%;
@@ -409,6 +413,7 @@ img {
   background-size: cover;
   background: url(../public/afbeeldingen/bg-1.jpg) no-repeat center center fixed,
     url(../public/afbeeldingen/bg-2.jpg), url(../public/afbeeldingen/bg-3.jpg);
+  overflow: hidden;
 }
 
 @keyframes animate {
@@ -504,6 +509,7 @@ img {
   background: url("../public/afbeeldingen/bg-4.jpg");
   background-size: cover;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .artistheader .content {
@@ -585,4 +591,68 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a {
+    padding: 10px 5px;
+    margin: 0 3px;
+    font-size: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+
+  .mainheader .content h1 {
+    font-size: 50px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+
+  /* Artists */
+
+  .artistheader .content h1,
+  .artistheader .content img {
+    font-family: "Nosifer", cursive;
+    font-size: 50px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+
+  .info {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .artistheader {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    background: url("../public/afbeeldingen/bg-4.jpg") no-repeat center
+      center/cover;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
 }

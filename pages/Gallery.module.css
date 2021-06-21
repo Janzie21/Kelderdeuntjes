@@ -4,7 +4,7 @@
   height: 100vh;
   position: relative;
   color: #fff;
-  background: url(../public/afbeeldingen/bg-6.jpg);
+  background: url(../public/afbeeldingen/bg-6.jpg) no-repeat center center/cover;
   background-size: cover;
 }
 
@@ -56,6 +56,14 @@
   .galleryheader .content img {
     font-family: "Nosifer", cursive;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .info {
+    width: 35vw;
+    height: 20vh;
+    max-height: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
   }
 }
