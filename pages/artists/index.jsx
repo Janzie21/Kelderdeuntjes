@@ -14,28 +14,30 @@ const Artists = ({ artists }) => {
       </header>
       <>
         <div className="gallery">
-          {artists.map(({ArtistID, Profielfoto, Naam, Rol, Width, Height, Alt }) => (
-            <div key={ArtistID} className="info">
-              <Image
-                src={`/afbeeldingen/${Profielfoto}`}
-                priority={true}
-                width={Width}
-                height={Height}
-                alt={Alt}
-                objectFit="fill"
-              />
-              <h1>{Naam}</h1>
-              <h4>{Rol}</h4>
-              <Link
-                href={`/artist/${ArtistID}/${slugify(Naam, {
-                  strict: true,
-                  lower: true,
-                })}`}
-              >
-                <a className="btn btn-outline-light">Learn more</a>
-              </Link>
-            </div>
-          ))}
+          {artists.map(
+            ({ ArtistID, Profielfoto, Naam, Rol, Width, Height, Alt }) => (
+              <div key={ArtistID} className="info">
+                <Image
+                  src={`/afbeeldingen/${Profielfoto}`}
+                  priority={true}
+                  width={Width}
+                  height={Height}
+                  alt={Alt}
+                  objectFit="fill"
+                />
+                <h1>{Naam}</h1>
+                <h4>{Rol}</h4>
+                <Link
+                  href={`/artist/${ArtistID}/${slugify(Naam, {
+                    strict: true,
+                    lower: true,
+                  })}`}
+                >
+                  <a className="btn btn-outline-light">Learn more</a>
+                </Link>
+              </div>
+            )
+          )}
         </div>
       </>
       );
