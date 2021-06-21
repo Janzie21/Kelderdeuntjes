@@ -23,7 +23,7 @@ const Gallery = ({ images, feestjes }) => {
     container: (provided, state) => ({
       ...provided,
       color: "#000",
-      width: "40vw",
+      width: "100",
       margin: "20px 50px",
     }),
     placeholder: (provided, state) => ({
