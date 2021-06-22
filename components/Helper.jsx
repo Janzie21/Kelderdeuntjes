@@ -4,7 +4,7 @@ export const knex = require("knex")({
     host: "89.36.74.243",
     user: "kelderdeuntjes",
     password: "QoU23@endqoel7fS",
-    // database: "kelderdeuntjes",
+    database: "kelderdeuntjes",
     // host: "localhost",
     // user: "root",
     // password: "rootpass",
