@@ -15,8 +15,8 @@ const EventDetail = ({
           <h1>{Naam}</h1>
         </div>
       </header>
-      <section className="artistdetail">
-        <div className="profile">
+      <section className={classes.eventdetail}>
+        <div className={classes.info}>
           <Image
             src={`/afbeeldingen/${Affiche}`}
             width={Width}
@@ -26,7 +26,7 @@ const EventDetail = ({
             objectFit="contain"
           />
         </div>
-        <div className={classes.eventdetail}>
+        <div className={classes.eventdetails}>
           <h1>{Naam}</h1>
           <h1>{moment(Datum).format("DD/MM/YYYY")}</h1>
           <h1>Price: {Prijs}</h1>

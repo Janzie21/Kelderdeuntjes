@@ -52,7 +52,7 @@ const Gallery = ({ images, feestjes }) => {
           <h1>Gallery</h1>
         </div>
       </header>
-      <div className="selector">
+      <div className={classes.selector}>
         <Select
           onChange={handleChange}
           options={options}
@@ -80,7 +80,7 @@ const Gallery = ({ images, feestjes }) => {
                   width={Width}
                   height={Height}
                   alt={Alt}
-                  objectFit="fill"
+                  layout="responsive"
                   srl_gallery_image="true"
                 />
               </div>

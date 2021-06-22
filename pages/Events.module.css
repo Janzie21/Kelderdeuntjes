@@ -31,8 +31,17 @@
   max-height: 200px;
 }
 
+.eventdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .eventdetail h1 {
   margin-bottom: 20px;
+}
+
+.eventdetails {
+  margin-left: 40px;
 }
 
 .picker {
@@ -88,8 +97,42 @@
   .eventheader .content img {
     font-family: "Nosifer", cursive;
     margin-bottom: 40px;
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
+  .info {
+    width: 70vw;
+  height: 50vh;
+  text-align: center;
+  }
+  
+  .info h1,.info h3 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+  }
+
+
+  .eventdetail {
+flex-direction: column;
+justify-content: center;
+
+
+}
+.eventdetails {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.timetable{
+margin-top: 20px;
+
+}
 }

@@ -3,20 +3,21 @@ import { knex } from "../../components/Helper";
 import Link from "next/link";
 import slugify from "slugify";
 import * as React from "react";
+import classes from "../artists.module.css";
 
 const Artists = ({ artists }) => {
   return (
     <>
-      <header className="artistheader">
-        <div className="content">
+      <header className={classes.artistheader}>
+        <div className={classes.content}>
           <h1>Artists</h1>
         </div>
       </header>
       <>
-        <div className="gallery">
+        <div className={classes.gallery}>
           {artists.map(
             ({ ArtistID, Profielfoto, Naam, Rol, Width, Height, Alt }) => (
-              <div key={ArtistID} className="info">
+              <div key={ArtistID} className={classes.info}>
                 <Image
                   src={`/afbeeldingen/${Profielfoto}`}
                   priority={true}
@@ -40,7 +41,6 @@ const Artists = ({ artists }) => {
           )}
         </div>
       </>
-      );
     </>
   );
 };

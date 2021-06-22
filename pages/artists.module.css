@@ -1,0 +1,104 @@
+.artistheader {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background: url("../public/afbeeldingen/bg-4.jpg") no-repeat center
+    center/cover;
+  background-size: cover;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.artistheader .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.artistheader .content h1,
+.artistheader .content img {
+  font-family: "Nosifer", cursive;
+  font-size: 80px;
+}
+
+.artistheader .content img {
+  width: auto;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.artistdetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artistdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 30vw;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 60vh;
+  overflow: hidden;
+  object-fit: contain;
+  margin: 0 50px 50px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+  height: 50vh;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Artists */
+
+  .artistheader .content h1,
+  .artistheader .content img {
+    font-family: "Nosifer", cursive;
+    font-size: 40px;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+  }
+
+  .profile {
+    width: 90vw;
+    height: 80vw;
+  }
+
+  .artistdetail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}

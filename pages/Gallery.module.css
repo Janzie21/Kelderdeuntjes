@@ -34,6 +34,7 @@
 .gallery {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin: 50px;
 }
@@ -56,14 +57,14 @@
   .galleryheader .content img {
     font-family: "Nosifer", cursive;
     margin-bottom: 40px;
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .info {
-    width: 35vw;
-    height: 20vh;
+    width: 40vw;
+    height: 50vh;
     max-height: 100%;
-    margin-bottom: 20px;
     overflow: hidden;
+    margin: 20px
   }
 }

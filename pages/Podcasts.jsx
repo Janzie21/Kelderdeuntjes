@@ -4,23 +4,23 @@ import ReactPlayer from "react-player";
 
 const Podcasts = ({ podcasts }) => {
   return (
-    <>
+    <div className={classes.podcastsection}>
       <header className={classes.podcastheader}>
         <div className={classes.content}>
           <h1>Podcasts</h1>
         </div>
       </header>
-      <div className={classes.podcastsection}>
-        {podcasts.map(({ id, Stream_title, Path, Img, Width, Heigth, Alt }) => (
+      <div className={classes.podcastlist}>
+        {podcasts.map(({ id, Stream_title, Path}) => (
           <div key={id} className={classes.podcast}>
             <div className={classes.podcastinfo}>
               <h1>{Stream_title}</h1>
-              <ReactPlayer url={Path} height={200} />
+              <ReactPlayer url={Path} height={200} className={classes.player} />
             </div>
           </div>
         ))}
       </div>
-    </>
+      </div>
   );
 };
 
